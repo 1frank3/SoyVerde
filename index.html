@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educación Ambiental</title>
+   <link rel="shortcut icon" href="img/uncpggl.ico" type="image/x-icon">
+
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f8f5;
+        color: #2d5353;
+        text-align: justify;
+        
+    }
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 0.5rem 0;
+    }
+    .logo-container img {
+        margin: 0 1rem;
+        max-width: 80px;
+        height: auto;
+    }
+    header {
+        background-color: #12b617;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+    }
+    nav {
+        background-color: #1a9716;
+        padding: 1rem;
+        text-align: center;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin:  2rem;
+    }
+    nav a:hover {
+        text-decoration: underline;
+        background-color: #20b925;
+    }
+    main {
+        padding: 5rem;
+    }
+    .section {
+        margin-bottom: 4rem;
+    }
+    .section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    footer {
+        background-color: #12b617;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        position: fixed;
+        font-size: 0.9rem;
+        width: 100%;
+        height: 10px ;
+        bottom: 0;
+    }
+    .video-container {
+        display: flex; /* Alinea los elementos en fila */
+        justify-content: center; /* Centra ambos elementos horizontalmente */
+        align-items: center; /* Centra ambos elementos verticalmente */
+        gap: 10rem; /* Espacio entre el video y la imagen */
+        margin: 1rem 0; /* Espacio alrededor de la sección */
+    }
+    
+    .video-container video 
+    {
+        max-width: 250px; /* Ajusta el tamaño máximo de video e imagen */
+        border-radius: 10px; /* Bordes redondeados para consistencia */
+    }
+    .reciclaje  {
+        max-width: 180px ;
+    }
+    .lib-cien, .cien-popu {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    
+    .lib-cien div, .cien-popu div {
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .lib-cien img, .cien-popu img {
+        max-width: 150px;
+        height: auto;
+        border-radius: 5px;
+        transition: transform 0.2s;
+    }
+    
+    .lib-cien img:hover, .cien-popu img:hover {
+        transform: scale(1.1);
+       
+    }
+    #Misión .quote {
+        text-align: right; /* Alinea el texto a la derecha */
+        font-style: italic; /* Aplica cursiva para estilo */
+        font-weight: bold; /* Hace la cita más visible */
+        margin-top: 1rem; /* Espacio para separarla del texto anterior */
+    }
+    /* Estilo para la sección de colaboradores */
+    #colaboradores {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #f9f9f9; /* Fondo claro */
+    }
+    
+    .colaboradores-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; /* Espacio entre las tarjetas */
+    }
+    
+    .colaborador {
+        background: #fff; /* Fondo blanco para cada tarjeta */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 200px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+    
+    .colaborador:hover {
+        transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+    }
+    
+    .colaborador img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%; /* Imagen circular */
+        object-fit: cover; /* Recorta bien la imagen */
+        margin-bottom: 10px;
+    }
+    
+    .colaborador h3 {
+        font-size: 18px;
+        margin: 10px 0 5px;
+        color: #333;
+    }
+    
+    .colaborador p {
+        font-size: 14px;
+        color: #666;
+    }
+    /* Centrar los títulos h2 */
+    h2 {
+        text-align: center;
+    }
+    
+    /* Estilo para resaltar las imágenes y el video */
+    .video-container video, .lib-cien img, .reciclaje img {
+        border: 3px solid #12b617; /* Borde verde */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+        transition: transform 0.3s; /* Transición suave */
+    }
+    
+    .video-container video:hover, .lib-cien img:hover, .reciclaje img:hover {
+        transform: scale(1.05); /* Agrandar ligeramente al pasar el mouse */
+    }
+    
+   </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="img/cnu.webp" alt="Logo del CNU">
+        <img src="img/cnea.webp" alt="Logo del CNEA">
+        <img src="img/uncpggl.webp" alt="Logo de la universidad">
+    </div>
+    <header>
+        <h1>Educación Ambiental</h1>
+        <p>SOY VERDE, SOY UNCPGGL</p>
+        <p>Promoviendo el cuidado de nuestro planeta</p>
+    </header>
+    <nav>
+        <a href="#intro">Introducción</a>
+        <a href="#contenido">Multimedia</a>
+        <a href="#imagen">Infografia</a>
+    </nav>
+    <main>
+
+        <section id="intro" class="section">
+            <h2>Introducción</h2>
+            <p>Desde la Universidad Nacional Comandante Padre Gaspar García Laviana, se promueve la
+                propuesta de nuestro buen gobierno del cuido de los recursos naturales a través del
+                diplomado de la MADRE TIERRA , está encaminando esfuerzos en torno a la formación
+                de profesionales integrales desde y con una concepción humanista del mundo, el cuido
+                de lo ecológico no es una tarea de pequeños grupos si no mas bien de todos los docentes, 
+               estudiantes administrativos  y sociedad que formamos parte de un mundo donde los 
+               cambios se dan para mejorar  la importancia de la tierra como un todo, pues todos ellos
+                componen las grandes mayorías del planeta. A partir de ellos debemos pensar el equilibrio
+                y el nuevo orden ecológico. Desde este programa inculcamos el amor y cuido de la naturaleza
+                que nos rodea formando parte del compromiso como universidad y sociedad..</p>
+        </section>
+
+        <section id="Misión" class="section">
+            <h2>Misión</h2>
+            <p>Promover en la comunidad educativas actividades que permitan el buen trato a la madre tierra
+                a través del uso adecuado con principios humanistas y beligerantes que nos encaminan a
+                tener un mundo mejor..</p>
+                <p class="quote">
+                    “Cada acción cuenta para salvar la tierra”
+                </p>
+        </section>
+
+       
+
+        <section id="video" class="section">
+            <h2>Infografia</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="videos/vid-ambi.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+                <div class="reciclaje">
+                    <img src="img/reciclaje.jpg" alt="">
+                </div>
+            </div>
+            
+        </section>
+         <h2>Fotografias</h2>
+        <div class="lib-cien">
+        
+            <div><a href=""><img src="img/IMG-20241210-WA0001.jpg" alt=""></a>
+            
+            </div>
+            <div><a href=""><img src="img/IMG-20241210-WA0003.jpg" alt=""></a>
+            
+            </div>
+            <div><a href=""><img src="img/IMG-20241210-WA0004.jpg" alt=""></a> 
+            
+            </div>
+         </div>
+         <p></p>
+
+         <section id="colaboradores" class="section">
+            <h2>Colaboradores</h2>
+            <div class="colaboradores-container">
+                <div class="colaborador">
+                    <img src="img/mynor2.jpg" alt="Colaborador 1">
+                    <h3>Maestro Mynor Mendiola</h3>
+                  
+                </div>
+                <div class="colaborador">
+                    <img src="img/anamaria.jpg" alt="Colaborador 2">
+                    <h3>Maestra Ana Maria Flores</h3>
+                  
+                </div>
+                <div class="colaborador">
+                    <img src="img/francisca.jpg" alt="Colaborador 3">
+                    <h3>Maestra Francisca Juniette Caballero</h3>
+                  
+                </div>
+                <div class="colaborador">
+                    <img src="img/wetfalia.jpg" alt="Colaborador 4">
+                    <h3>Maestra Wetfalia Nahara Calderón</h3>
+                   
+                </div>
+                <div class="colaborador">
+                    <img src="img/jonathan.jpg" alt="Colaborador 5">
+                    <h3>Maestro Jonathan Betancourt</h3>
+                   
+                </div>
+            </div>
+        </section>
+        
+
+
+        
+        
+    </main>
+    <footer>
+        &copy; 2024 SOY VERDE, SOY UNCPGGL - Todos los derechos reservados
+      
+    </footer>
+</body>
+</html>
